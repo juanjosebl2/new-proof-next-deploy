@@ -55,7 +55,6 @@ const Register = () => {
                             autoFocus
                         />
 
-                        <InputError messages={errors.name} className="mt-2" />
                     </div>
 
                     {/* Email Address */}
@@ -71,7 +70,6 @@ const Register = () => {
                             required
                         />
 
-                        <InputError messages={errors.email} className="mt-2" />
                     </div>
 
                     {/* Password */}
@@ -88,7 +86,6 @@ const Register = () => {
                             autoComplete="new-password"
                         />
 
-                        <InputError messages={errors.password} className="mt-2" />
                     </div>
 
                     {/* Confirm Password */}
@@ -108,7 +105,6 @@ const Register = () => {
                             required
                         />
 
-                        <InputError messages={errors.password_confirmation} className="mt-2" />
                     </div>
 
                     <div className="flex items-center justify-end mt-4">

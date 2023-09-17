@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     })
 
     const [email, setEmail] = useState('')
-    const [errors, setErrors] = useState([])
+    const [errors, setErrors] = useState<any>([])
     const [status, setStatus] = useState(null)
 
     const submitForm: FormEventHandler = event => {
@@ -55,7 +55,6 @@ const ForgotPassword = () => {
                             autoFocus
                         />
 
-                        <InputError messages={errors.email} className="mt-2" />
                     </div>
 
                     <div className="flex items-center justify-end mt-4">
