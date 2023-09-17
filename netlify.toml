@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm run dev"  # Comando para construir tu proyecto
+  command = "npm install && npm run build"  # Comando para construir tu proyecto
 
 [[redirects]]
   from = "/*"
