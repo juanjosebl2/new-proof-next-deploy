@@ -58,7 +58,6 @@ const UpdatePasswordForm = () => {
                         autoComplete="current_password"
                     />
 
-                    <InputError messages={errors.current_password} className="mt-2" />
                 </div>
 
                 <div>
@@ -72,7 +71,6 @@ const UpdatePasswordForm = () => {
                         autoComplete="new_password"
                     />
 
-                    <InputError messages={errors.password} className="mt-2" />
                 </div>
                 <div>
                     <Label htmlFor="password_confirmation">Confirm Password</Label>
@@ -85,7 +83,6 @@ const UpdatePasswordForm = () => {
                         autoComplete="password_confirmation"
                     />
 
-                    <InputError messages={errors.password_confirmation} className="mt-2" />
                 </div>
 
                 <div className="flex items-center gap-4">

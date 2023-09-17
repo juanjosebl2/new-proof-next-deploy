@@ -93,7 +93,6 @@ const DeleteUserForm = () => {
                             placeholder="Password"
                         />
 
-                        <InputError messages={errors.password} className="mt-2" />
                     </div>
 
                     <div className="mt-6 flex justify-end">
