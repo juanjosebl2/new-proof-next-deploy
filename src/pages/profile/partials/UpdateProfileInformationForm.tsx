@@ -16,7 +16,7 @@ const UpdateProfileInformationForm = () => {
     const [status, setStatus] = useState(null)
 
     useEffect(() => {
-        if (user !== undefined) {
+        if (user !== undefined && user.name && user.email) {
             setName(user.name)
             setEmail(user.email)
         }
@@ -66,7 +66,6 @@ const UpdateProfileInformationForm = () => {
                         required
                         autoFocus
                     />
-                    <InputError messages={errors.email} className="mt-2" />
                 </div>
                 {/* Email Address */}
                 <div>
@@ -82,7 +81,6 @@ const UpdateProfileInformationForm = () => {
                         autoFocus
                     />
 
-                    <InputError messages={errors.email} className="mt-2" />
                 </div>
 
                 {user?.must_verify_email && user?.email_verified_at === null && (
