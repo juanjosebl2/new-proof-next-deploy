@@ -1,0 +1,7 @@
+[build]
+  command = "npm install && npm run dev"  # Comando para construir tu proyecto
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
