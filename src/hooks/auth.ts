@@ -133,7 +133,7 @@ export const useAuth = ({ middleware, redirectIfAuthenticated }: IUseAuth) => {
             window.location.pathname === '/verify-email' &&
             user?.email_verified_at
         )
-            router.push(redirectIfAuthenticated)
+            //router.push(redirectIfAuthenticated)
         if (middleware === 'auth' && error) logout()
     }, [user, error])
 
