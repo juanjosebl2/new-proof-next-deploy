@@ -1,7 +1,7 @@
 import Axios from 'axios'
 
 //const baseURL = process.env.NEXT_PUBLIC_BACKEND_URL
-const baseURL = "https://barber-backend-laravel-production.up.railway.app"
+const baseURL = "https://proof-backend-production.up.railway.app"
 
 const axios = Axios.create({
     withCredentials: true,
