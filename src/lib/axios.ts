@@ -10,6 +10,6 @@ const axios = Axios.create({
     baseURL: baseURL
 })
 
-export const csrf = () => axios.get(baseURL + '/sanctum/csrf-cookie')
+export const csrf = () => axios.get(baseURL + 'sanctum/csrf-cookie')
 
 export default axios
